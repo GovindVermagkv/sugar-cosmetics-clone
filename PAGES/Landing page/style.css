@@ -220,6 +220,354 @@ header{
   }
 
 
+/* ------------------------main content (prakash kumar)-------------------- */
+
+
+/* h2{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 50px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+} */
+
+
+.top_slide_bar_div{
+    
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+
+.sliding_window{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    overflow: visible;
+    box-sizing: border-box;
+}
+
+
+.content:hover .abs{
+    visibility: visible;
+   
+}
+
+
+.content{
+    position: relative;
+}
+
+
+.abs{
+   background-color: rgba(0,0,0,.5);
+    position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   height: 30px;
+   width: 30px;
+   cursor: pointer;
+   border-color: transparent;
+   visibility: hidden;
+    
+}
+
+
+.abs span{
+    font-size: 14px;
+    color: white;
+    line-height: 40px;
+    
+}
+
+
+.abs:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+
+}
+
+
+.lArrow{
+    margin-left: 40px;
+    height: 28px;
+    width: 28px;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.rArrow{
+    right: 0;
+        margin-right: 60px;
+        height: 28px;
+        width: 28px;
+        border-radius: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+
+
+/* BESTSELLERS ==>> First box starts */
+
+.first_box_slide_div{
+    /* width: 15%;
+    margin:20px;
+    height: 90%;
+    background-color:white;
+    text-align: center;
+    width: 20%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    display: flex;
+    width: 95%;
+    height: fit-content;
+    cursor: pointer;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+.first_box_slide_div:hover .left,.right{
+    visibility: visible;
+}
+
+.first_box_slide_div:hover .right{
+    visibility: visible;
+}
+
+.best_seller_products{
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+   justify-content: space-evenly;
+    width: 90%;
+    flex-wrap: wrap;
+   overflow: hidden;
+}
+
+.idiv{
+    display: flex;
+    width: 10%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.left,.right{
+     font-size: 50px;
+    align-items: center;
+   visibility: hidden;   
+}
+
+/* ########### BESTSELLERS ==>> From JS ########### */
+
+.first_pro_div{
+    width: 20%;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    height: fit-content;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.first_pro_div:hover{
+    visibility: visible;
+}
+
+
+.pro_name{
+    font-size: 13px;
+    height: 40px;
+    font-weight: bold;
+    text-align: center;
+   
+    margin-top: 5px;
+}
+
+
+.pdiv{
+    display: flex;
+    align-items: center;
+   margin-top: 3px;
+    height: 20px;
+    
+    justify-content: center;
+}
+
+.text_tag{
+  
+    text-align: center;
+   box-sizing: border-box;
+   padding:  10px;
+   margin: auto;
+  margin-top: 8px;
+    background-color: #1f1f1f;
+    color: aliceblue;
+   
+}
+
+/*########### BESTSELLERS  part Completed  ###########*/
+
+
+/*########### HOT Deals part and Top pics of the week started  ###########*/
+
+
+.second_box:hover .abs{
+    visibility: visible; 
+}
+
+.fifth_box:hover .abs{
+    visibility: visible; 
+}
+
+.second_box,.fifth_box{
+    position: relative;
+}
+
+.second_box_slide_div,.fifth_box_slide_div{
+    /* border: 1px solid; */
+    display: flex;
+    height: 266px;
+    width: 1263px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.first_slider{
+    margin-top: -10px;
+}
+
+.slider{
+    /* border: 1px solid red; */
+    display: flex;
+    width: 1263px;
+    height: 266px;
+    box-sizing: border-box;
+    overflow: visible;
+}
+.sliding_div{
+    /* border: 1px solid; */
+    width: 421px;
+    height: 266px;
+     box-sizing: border-box;
+}
+
+/*########### HOT Deals part Completed and Top pics of the week ###########*/
+
+
+/* *########### third box (Youtube - Video)  Started ###########*/ 
+
+.third_box_video_div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.third_box_video_div>iframe{
+    display: block;
+    margin: auto;
+    width: 85%;
+    height: 65vh;
+}
+
+/* *########### third box (Youtube - Video)  Completed ###########*/ 
+
+
+/*########### Just-In  part Started  ###########*/
+
+
+.fourth_box_slide_div{
+    display: flex;
+    width: 95%;
+    height: fit-content;
+    cursor: pointer;
+    margin: auto;
+    justify-content: space-evenly;
+}
+.fourth_box_slide_div:hover .justLeft,.justRight{
+    visibility: visible;
+}
+.fourth_box_slide_div:hover .justRight{
+    visibility: visible;
+}
+.justIn_products{
+   
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+   justify-content: space-evenly;
+    width: 90%;
+    flex-wrap: wrap;
+   overflow: hidden;
+}
+.judiv{
+    display: flex;
+    width: 10%;
+    align-items: center;
+    justify-content: space-around;
+}
+.justLeft,.justRight{
+    
+    font-size: 50px;
+    align-items: center;
+   visibility: hidden;   
+}
+
+/* From JS */
+
+.four_pro_div{
+    width: 21%;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    height: 100%;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.four_pro_div:hover{
+    visibility: visible;
+}
+
+.justIn_name{
+    font-size: 13px;
+    height: 40px;
+    font-weight: bold;
+    text-align: center;
+   
+    margin-top: 5px;
+}
+.Jdiv{
+    display: flex;
+    align-items: center;
+   margin-top: 3px;
+    height: 20px;
+    
+    justify-content: center;
+}
+
+.just_tag{
+  
+    text-align: center;
+   box-sizing: border-box;
+   padding:  10px;
+   margin: auto;
+  margin-top: 8px;
+    background-color: #1f1f1f;
+    color: aliceblue;
+   
+}
+
+
+
+
 /* ------------------------main content (govind verma)-------------------- */
 /* ------------------------------------gifting----------------------- */
 
@@ -366,6 +714,7 @@ span{
     background-color:white;
     text-align: center;
     width: 20%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .super_saver_box_offer{
     position: relative;
