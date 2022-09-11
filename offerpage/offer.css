@@ -220,6 +220,19 @@ header{
 
   /* ---------------------------main content offer---------------------- */
 
+.skincareheader{
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  background-color: white;
+  display: flex;
+}
+
+.skincareheader i{
+  margin-top: 40px;
+  font-size: 20px;
+}
+
 #offercontainer{
     height: fit-content;
     margin-bottom: 50px;
