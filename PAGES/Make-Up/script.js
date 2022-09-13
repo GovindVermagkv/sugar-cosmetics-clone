@@ -68,11 +68,62 @@ skincare.addEventListener("click", function (event) {
         <h4 class="add"> Add to Cart</h4>
         </div> 
         </div>`;
+
+
+        localStorage.setItem("local_name",`${makeup.name}`)
+        localStorage.setItem("local_discription",`${makeup.description}`)
+        localStorage.setItem("local_price",`${makeup.price}`)
+
+
         container.innerHTML += result;
       }
-    });
-  // .catch((err) => alert("Nothing found"));
+    })
+  .catch((err) => alert("Nothing found"));
 });
+
+
+// --------------------------store and fetch-------------//
+
+
+var array_id=[]
+
+container.addEventListener("click", function productShow(e){
+  // console.log(e.target)
+  if (e.target.classList[0] == "click") {
+      // console.log(e.target.id)
+      // console.log(e.target.src)
+      localStorage.setItem("localimage",e.target.src)
+      alert(e.target.id)
+        show_product_area.style.display = "none"
+  discription_container_main.style.display = "block";
+
+  var image_from_localst = localStorage.getItem("localimage")
+  var name_from_localst = localStorage.getItem("local_name")
+  var discription_from_localst = localStorage.getItem("local_discription")
+  var price_from_localst = localStorage.getItem("local_price")
+  
+
+  var hard_image= document.getElementById("hard_image")
+  var detail_name= document.getElementById("details_name")
+  var price= document.getElementById("price")
+
+    hard_image.src=`${image_from_localst}`;
+    detail_name.textContent= name_from_localst;
+    price.textContent=`$${price_from_localst}`
+
+
+
+      let id = e.target.id
+      array_id.push(id)
+      localStorage.setItem("product_id", `${id}`)
+
+      let api_product_id= localStorage.getItem("product_id")
+      // alert(api_product_id)
+
+  }
+
+  console.log(array_id);
+})
 
 
 

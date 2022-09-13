@@ -22,10 +22,15 @@ header{
 
 .navbar {
     width: 100%;
-    background-color: #fff;
+    background-color:black;
   }
   .navicon i{
     margin-top: 40px;
+    color: white;
+  }
+
+  .giftlink i{
+    font-size: 25px;
   }
   .navicon {
     display: flex;
@@ -39,9 +44,8 @@ header{
   }
   
   .brand-logo {
-    height: 55px;
+    height: 85px;
     text-decoration: none;
-    color: black;
     margin-left: 45px;
   }
 
@@ -104,7 +108,7 @@ header{
     display: none;
   }
   .login >a {
-    color: gray;
+    color: white;
   }
  
   .nav {
@@ -129,6 +133,7 @@ header{
   }
   .navlogin >i{
     margin-top: 40px;
+    color: white;
   }
  
   .navlogin > .fa-sort-desc{
@@ -137,14 +142,14 @@ header{
   .menu-bar {
     text-align: center;
     display: flex;
-    margin-left: 30px;
+    /* margin-left: 30px; */
     font-weight: 700;
-    background-color: #fff;
+    background-color: black;
   }
+  
   .menu-bar > .ul_container {
     display:flex;
     list-style: none;
-    color: gray;
   }
   .menu-bar .ul_container li {
     width: 100%;
@@ -152,9 +157,9 @@ header{
     padding: 5px 0px;
     list-style: none;
   }
-  .menu-bar .ul_container li a {
+  .menu-bar .ul_container  li  a {
     text-decoration: none;
-    color: gray;
+    color: white;
     font-size: 15px;
    
   }
@@ -166,6 +171,7 @@ header{
     /* background-color: #e4e9e3; */
     border-radius: 2px;
   }
+ 
   
   /* sum-menu-1 start */
   
@@ -181,6 +187,7 @@ header{
     margin-top: 10px;
     margin-right: 10px;
   }
+ 
   .menu-bar ul li:hover .sub-menu-1 ul {
     display: block;
     margin: 10px;
@@ -318,13 +325,7 @@ main{
 /* BESTSELLERS ==>> First box starts */
 
 .first_box_slide_div{
-    /* width: 15%;
-    margin:20px;
-    height: 90%;
-    background-color:white;
-    text-align: center;
-    width: 20%;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    /* background-color: blue; */
     display: flex;
     width: 95%;
     height: fit-content;

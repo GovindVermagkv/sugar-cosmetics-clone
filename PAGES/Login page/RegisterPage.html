@@ -18,6 +18,10 @@
 
 <body>
 
+    
+
+
+
     <div id="MainRegisterPage" style="display: block;">
         <div id="subRegisterPage">
             <div id="close" onclick="closed ()">
@@ -51,19 +55,23 @@
                 <form action="./myaction.js" name="myForm" onsubmit="return validateform()" method="post">
                     <div id="infoinput">
                         <div class="infoname" id="First-Name">
-                            <input type="text" maxlength="9" placeholder="First-Name" class="formerror" required>
+                            <input type="text" maxlength="9" placeholder="First-Name" class="formerror" id="fname" required>
                         </div>
                         <div class="infoname" id="Middle-Name">
-                            <input type="text" maxlength="9" placeholder="Middle-Name" class="formerror" required>
+                            <input type="text" maxlength="9" placeholder="Middle-Name" class="formerror" id="mname" required>
                         </div>
                         <div class="infoname" id="Middle-Name">
-                            <input type="text" maxlength="9" placeholder="Last-Name" class="formerror" required>
+                            <input type="text" maxlength="9" placeholder="Last-Name" class="formerror" id="lname" required>
                         </div>
                     </div>
                     <div id="infoemail" id="Middle-Name">
-                        <input type="email" placeholder="Middle-Name">
+                        <input type="email" placeholder=" Enter Email" id="email">
                     </div>
-                    <div id="savebtn" onclick="succeful ()">Save and Continue</div>
+                    <div id="infoemail" id="Middle-Name">
+                        <input type="number" placeholder="Phone Number" id="phone">
+                    </div>
+                    <div id="savebtn" onclick="Save_and_countinue()"><a href="./loginPage.html">Save and Continue</a> </div>
+                    <div id="savebtn""><a href="./loginPage.html">Existing User ?</a></div>
             </div>
             </form>
             <div id="logcontent">

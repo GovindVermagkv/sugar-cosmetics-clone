@@ -126,110 +126,6 @@ let topPicksArr = [
     ],
  ]
 
-// //  ###########  Sliding Window part   Started  ###########
-
-
-// let top_slide_bar_div = document.querySelector(".sliding_window")
-// let isPaused = false;
-// let topTemp  = 0
-// let winWidth = 1263;
-// setInterval(()=>{
-    
-    
-//     if(!isPaused){
-//         topTemp = topTemp + winWidth
-        
-        
-//         if(topTemp<winWidth*((top_slide_images_arr.length-1))){
-//             top_slide_bar_div.style.transform = `translate3d(${-topTemp}px,0px,0px)`
-//             top_slide_bar_div.style.transition = ".4s"
-//             console.log(topTemp,winWidth,i++)
-//         }else{
-//             top_slide_bar_div.style.transform = `translate3d(${-0}px,0px,0px)`
-//             top_slide_bar_div.style.transition = "0.2s"
-//             topTemp = 0
-//         }             
-//      }
-//     },3000)
-   
-// let start = (arr,container)=>{
-//     container.innerText = ""
-
-//     for(let i=0; i<arr.length; i++){
-//         let img = document.createElement("img")
-//         img.className = "top_img"
-//         img.src = arr[i].url
-//         container.append(img)
-//     }
-   
-// } 
-// start(top_slide_images_arr,top_slide_bar_div)
-
-//         top_slide_bar_div.addEventListener("mouseover",()=>{
-//             pause()
-//         })
-//         top_slide_bar_div.addEventListener("mouseout",()=>{
-//             play()
-//         })
-//         document.querySelector(".lArrow").addEventListener("mouseover",()=>{
-//             pause()
-           
-//         })
-//         document.querySelector(".rArrow").addEventListener("mouseover",()=>{
-//             pause()
-           
-//         })
-//         document.querySelector(".lArrow").addEventListener("mouseout",()=>{
-//             play()
-//         })
-//         document.querySelector(".rArrow").addEventListener("mouseout",()=>{
-//             play()
-//         })
-
-
-// let play = ()=>{
-//     isPaused = false
-//     ispaused = false
-// }
-// let pause = ()=>{
-//     isPaused = true
-//     ispaused = true
-// }
-    
-//     document.querySelector(".lArrow").addEventListener("click",()=>{
-    
-//         // let winWidth = 1263
-//         topTemp = topTemp - winWidth
-//         let final = winWidth*(top_slide_images_arr.length-1)
-//        if(topTemp>=0){
-//         console.group("left",topTemp)
-//         top_slide_bar_div.style.transform = `translate3d(${-topTemp}px,0px,0px)`
-//         top_slide_bar_div.style.transition = ".4s"
-//        } else{
-//         top_slide_bar_div.style.transform = `translate3d(${-final}px,0px,0px)`
-//         top_slide_bar_div.style.transition = "0.2s"
-//         topTemp = final
-//        } 
-      
-        
-//     })
-
-//     document.querySelector(".rArrow").addEventListener("click",()=>{
-//         // let winWidth = 1263
-       
-//         topTemp = topTemp + winWidth
-        
-//         if(topTemp<winWidth*(top_slide_images_arr.length)){
-//             top_slide_bar_div.style.transform = `translate3d(${-topTemp}px,0px,0px)`
-//             top_slide_bar_div.style.transition = ".4s"
-//         }else{
-//             top_slide_bar_div.style.transform = `translate3d(${-0}px,0px,0px)`
-//             top_slide_bar_div.style.transition = "0.1s"
-//             topTemp = 0
-//         }
-        
-//     })
-
 //  ###########  Sliding Window part   Completed  ###########
 
 
@@ -468,6 +364,7 @@ document.querySelector(".Right_arr_div").addEventListener("click",()=>{
      })
 
 
-    // ##3###%%$$^%  Top pics of the week part Completed   ##3###%%$$^%
+    //  --------------------------map box details --------//
 
-
+    
+    

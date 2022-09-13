@@ -133,8 +133,13 @@ body{
   background-color: #fdaac9;
   display: flex;
   justify-content: center;
+  color: white;
   align-items: center;
   margin-top: 10px;
+}
+#savebtn >a{
+  text-decoration: none;
+  color: white;
 }
 #logcontent {
   margin-top: 25px;

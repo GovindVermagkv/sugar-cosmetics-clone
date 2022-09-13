@@ -16,10 +16,15 @@ body{
   animation: right 2s;
 } 
 
+#error_msg{
+  color: red;
+  margin-top: 10px;
+}
+
 .subLoginPage {
-  border: 1px solid royalblue;
+  /* border: 1px solid royalblue; */
   background-image: url("https://in.sugarcosmetics.com/Login_bg.svg");
-  height: 92vh;
+  height: 100vh;
   width: 655px;
   background-position: 50%;
   background-size: cover;
